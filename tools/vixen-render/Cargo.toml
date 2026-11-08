@@ -1,0 +1,13 @@
+[package]
+name = "vixen-render"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+vixen-core.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

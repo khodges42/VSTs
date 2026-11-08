@@ -1,0 +1,16 @@
+[package]
+name = "spasm-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+allocation-counter = "=0.8.1"
+
+[lints]
+workspace = true

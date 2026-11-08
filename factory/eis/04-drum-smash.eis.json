@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "name": "Drum Smash",
+  "description": "Quick percussion compression with PUNCH preserving leading edges; lift ghost notes with JUICE.",
+  "config": {
+    "crossovers": [
+      120.0,
+      2500.0
+    ],
+    "bands": [
+      {
+        "up_threshold": -42.0,
+        "up_ratio": 3.0,
+        "down_threshold": -24.0,
+        "down_ratio": 8.0,
+        "attack_ms": 5.0,
+        "release_ms": 45.0,
+        "makeup_db": 4.0,
+        "knee_db": 6.0,
+        "up_limit_db": 12.0,
+        "drive": 0.0,
+        "sat_enabled": true,
+        "link": 1.0,
+        "mix": 1.0,
+        "bypass": false,
+        "solo": false
+      },
+      {
+        "up_threshold": -42.0,
+        "up_ratio": 3.0,
+        "down_threshold": -24.0,
+        "down_ratio": 8.0,
+        "attack_ms": 0.7,
+        "release_ms": 45.0,
+        "makeup_db": 4.0,
+        "knee_db": 6.0,
+        "up_limit_db": 12.0,
+        "drive": 0.0,
+        "sat_enabled": true,
+        "link": 1.0,
+        "mix": 1.0,
+        "bypass": false,
+        "solo": false
+      },
+      {
+        "up_threshold": -42.0,
+        "up_ratio": 3.0,
+        "down_threshold": -24.0,
+        "down_ratio": 8.0,
+        "attack_ms": 0.4,
+        "release_ms": 45.0,
+        "makeup_db": 4.0,
+        "knee_db": 6.0,
+        "up_limit_db": 12.0,
+        "drive": 0.0,
+        "sat_enabled": true,
+        "link": 1.0,
+        "mix": 1.0,
+        "bypass": false,
+        "solo": false
+      }
+    ],
+    "amount": 0.65,
+    "time": 1.0,
+    "tone_db": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "drive": 0.0,
+    "juice": 1.0,
+    "punch": 0.55,
+    "mix": 1.0,
+    "output_db": -5.0,
+    "floor_db": -84.0,
+    "auto_gain": false,
+    "safety": true,
+    "bypass": false
+  }
+}

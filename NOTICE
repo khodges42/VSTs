@@ -1,0 +1,19 @@
+VIXEN, ECHOGIRL, EIS, SPASM / BY VOIDMUTT
+EIS fictional manufacturer: Sweaty Ferguson Audio Systems.
+Original application code, patch/preset recipes and code-native art: VOIDMUTT, 2026.
+Licensed GPL-3.0-or-later. See LICENSE and docs/licensing.md.
+
+NIH-plug and its egui adapter are ISC licensed by Robbert van der Helm and
+contributors. egui/baseview and other dependencies retain their own licenses.
+The locked vst3-sys bindings declare GPLv3. This repository does not relicense
+upstream source or fonts; the GPLv3 option applies to the combined VST3 build.
+See docs/dependencies-windows.json and bundled third-party notices.
+
+RiffCalc (formerly PACKRAT) has moved to its own repository and retains its
+application/dependency notices there. No C++ workstation is bundled here.
+
+VST is a trademark of Steinberg Media Technologies GmbH. Product names used
+in design/research documents identify sonic inspirations, not endorsements,
+licensed emulations, reproduced factory presets or bundled proprietary samples.
+
+No anime artwork, third-party sound recordings or factory samples are included.

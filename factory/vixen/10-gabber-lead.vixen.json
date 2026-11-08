@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "name": "GABBER LEAD",
+  "author": "VOIDMUTT",
+  "category": "HARDCORE",
+  "description": "Octave pulse/saw attack with pitch snap, PWM, noise and dense saturation.",
+  "performance": "Stab octaves or hold a screaming top line. Panic raises the pitch snap; damage adds roughness.",
+  "x_label": "PANIC",
+  "y_label": "DAMAGE",
+  "synth": {
+    "oscillators": [
+      {
+        "wave": "Pulse",
+        "level": 0.7,
+        "semitones": 0.0,
+        "unison": 2,
+        "detune": 0.2,
+        "width": 0.5,
+        "pulse_width": 0.5,
+        "pwm": 0.0
+      },
+      {
+        "wave": "Saw",
+        "level": 0.5,
+        "semitones": 12.0,
+        "unison": 2,
+        "detune": 0.15,
+        "width": 0.7,
+        "pulse_width": 0.5,
+        "pwm": 0.0
+      },
+      {
+        "wave": "Noise",
+        "level": 0.045,
+        "semitones": 0.0,
+        "unison": 1,
+        "detune": 0.0,
+        "width": 0.0,
+        "pulse_width": 0.5,
+        "pwm": 0.0
+      }
+    ],
+    "amp": {
+      "attack": 0.002,
+      "decay": 0.18,
+      "sustain": 0.6,
+      "release": 0.065
+    },
+    "filter_env": {
+      "attack": 0.005,
+      "decay": 0.25,
+      "sustain": 0.0,
+      "release": 0.12
+    },
+    "pitch_env": {
+      "attack": 0.001,
+      "decay": 0.06,
+      "sustain": 0.0,
+      "release": 0.04
+    },
+    "pitch_amount": 7.0,
+    "filter_mode": "Low24",
+    "cutoff": 4200.0,
+    "resonance": 0.48,
+    "filter_amount": 2.0,
+    "keytrack": 0.4,
+    "drive": 0.95,
+    "phase_mod": 0.0,
+    "velocity": 0.65,
+    "accent": 0.0,
+    "lfos": [
+      {
+        "shape": "Sine",
+        "rate": 6.0,
+        "sync": false,
+        "beats": 1.0,
+        "pitch": 0.0,
+        "filter": 0.0,
+        "pwm": 0.12
+      },
+      {
+        "shape": "Sine",
+        "rate": 0.7,
+        "sync": false,
+        "beats": 1.0,
+        "pitch": 0.0,
+        "filter": 0.0,
+        "pwm": 0.0
+      }
+    ],
+    "effects": {
+      "chorus": 0.0,
+      "chorus_rate": 0.4,
+      "delay": 0.14,
+      "delay_beats": 0.75,
+      "feedback": 0.32,
+      "reverb": 0.08
+    },
+    "voice_mode": "Poly",
+    "voices": 12,
+    "glide": 0.0,
+    "bend_range": 2.0,
+    "gain": 0.7,
+    "mappings": [
+      {
+        "enabled": true,
+        "source": "X",
+        "target": "PitchEnv",
+        "amount": 0.8,
+        "curve": 1.0
+      },
+      {
+        "enabled": true,
+        "source": "X",
+        "target": "Cutoff",
+        "amount": 0.8,
+        "curve": 1.0
+      },
+      {
+        "enabled": true,
+        "source": "Y",
+        "target": "PhaseMod",
+        "amount": 1.5,
+        "curve": 1.0
+      },
+      {
+        "enabled": true,
+        "source": "Y",
+        "target": "Pwm",
+        "amount": 0.8,
+        "curve": 1.0
+      },
+      {
+        "enabled": true,
+        "source": "Y",
+        "target": "Drive",
+        "amount": 0.3,
+        "curve": 1.0
+      },
+      {
+        "enabled": false,
+        "source": "X",
+        "target": "Cutoff",
+        "amount": 0.0,
+        "curve": 1.0
+      },
+      {
+        "enabled": false,
+        "source": "X",
+        "target": "Cutoff",
+        "amount": 0.0,
+        "curve": 1.0
+      },
+      {
+        "enabled": false,
+        "source": "X",
+        "target": "Cutoff",
+        "amount": 0.0,
+        "curve": 1.0
+      },
+      {
+        "enabled": false,
+        "source": "X",
+        "target": "Cutoff",
+        "amount": 0.0,
+        "curve": 1.0
+      },
+      {
+        "enabled": false,
+        "source": "X",
+        "target": "Cutoff",
+        "amount": 0.0,
+        "curve": 1.0
+      },
+      {
+        "enabled": true,
+        "source": "Wheel",
+        "target": "Cutoff",
+        "amount": 0.6,
+        "curve": 1.0
+      },
+      {
+        "enabled": true,
+        "source": "Wheel",
+        "target": "LfoFilter",
+        "amount": 0.25,
+        "curve": 1.0
+      }
+    ],
+    "x_cc": 16,
+    "y_cc": 17
+  },
+  "controls": {
+    "x": 0.5,
+    "y": 0.5,
+    "cutoff": 0.0,
+    "resonance": 0.0,
+    "drive": 0.0,
+    "decay": 0.0,
+    "glide": 0.0,
+    "output": 0.7
+  }
+}

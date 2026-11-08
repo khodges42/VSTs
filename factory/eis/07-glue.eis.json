@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "name": "Glue",
+  "description": "Restrained bus dynamics with slow recovery. Level-match and judge it in the track.",
+  "config": {
+    "crossovers": [
+      120.0,
+      2500.0
+    ],
+    "bands": [
+      {
+        "up_threshold": -42.0,
+        "up_ratio": 1.4,
+        "down_threshold": -12.0,
+        "down_ratio": 2.0,
+        "attack_ms": 25.0,
+        "release_ms": 220.0,
+        "makeup_db": 0.0,
+        "knee_db": 6.0,
+        "up_limit_db": 4.0,
+        "drive": 0.0,
+        "sat_enabled": true,
+        "link": 1.0,
+        "mix": 1.0,
+        "bypass": false,
+        "solo": false
+      },
+      {
+        "up_threshold": -42.0,
+        "up_ratio": 1.4,
+        "down_threshold": -12.0,
+        "down_ratio": 2.0,
+        "attack_ms": 25.0,
+        "release_ms": 220.0,
+        "makeup_db": 0.0,
+        "knee_db": 6.0,
+        "up_limit_db": 4.0,
+        "drive": 0.0,
+        "sat_enabled": true,
+        "link": 1.0,
+        "mix": 1.0,
+        "bypass": false,
+        "solo": false
+      },
+      {
+        "up_threshold": -42.0,
+        "up_ratio": 1.4,
+        "down_threshold": -12.0,
+        "down_ratio": 2.0,
+        "attack_ms": 25.0,
+        "release_ms": 220.0,
+        "makeup_db": 0.0,
+        "knee_db": 6.0,
+        "up_limit_db": 4.0,
+        "drive": 0.0,
+        "sat_enabled": true,
+        "link": 1.0,
+        "mix": 1.0,
+        "bypass": false,
+        "solo": false
+      }
+    ],
+    "amount": 0.35,
+    "time": 1.0,
+    "tone_db": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "drive": 0.0,
+    "juice": 1.0,
+    "punch": 0.45,
+    "mix": 1.0,
+    "output_db": 0.0,
+    "floor_db": -84.0,
+    "auto_gain": false,
+    "safety": true,
+    "bypass": false
+  }
+}

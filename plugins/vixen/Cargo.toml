@@ -1,0 +1,20 @@
+[package]
+name = "vixen"
+version = "0.1.1"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+vixen-core.workspace = true
+nih_plug.workspace = true
+nih_plug_egui.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+crossbeam-queue = "=0.3.14"
+
+[lints]
+workspace = true

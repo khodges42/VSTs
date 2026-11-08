@@ -1,0 +1,6 @@
+[
+  {"group":"egui-0.31.1","repository":"emilk/egui","revision":"1669e52a7ccfc3489c1b0999b9ed48894a0b3887","files":["LICENSE-APACHE","LICENSE-MIT"]},
+  {"group":"clipboard-win-5.4.3","repository":"DoumanAsh/clipboard-win","revision":"ed27008ae5d1f10cfbb266de039f0fb35fd05a56","files":["LICENSE"]},
+  {"group":"com-scrape-types-0.1.1","repository":"coupler-rs/vst3-rs","revision":"33f1859fbdcfa247c1fdd17d565cb5285860e4ce","files":["LICENSE-APACHE","LICENSE-MIT"]},
+  {"group":"profiling-1.0.18","repository":"aclysma/profiling","revision":"8271551172eb6fa4cba47369aedd93790c623df9","files":["LICENSE-APACHE","LICENSE-MIT"]}
+]

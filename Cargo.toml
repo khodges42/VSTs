@@ -1,0 +1,26 @@
+[workspace]
+members = ["crates/vixen-core", "plugins/vixen", "tools/vixen-render", "tools/vixen-host", "crates/echogirl-core", "plugins/echogirl", "tools/echogirl-lab", "crates/eis-core", "plugins/eis", "tools/eis-lab", "crates/spasm-core", "plugins/spasm", "tools/spasm-lab"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.93"
+license = "GPL-3.0-or-later"
+
+[workspace.dependencies]
+vixen-core = { path = "crates/vixen-core" }
+echogirl-core = { path = "crates/echogirl-core" }
+eis-core = { path = "crates/eis-core" }
+spasm-core = { path = "crates/spasm-core" }
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.150"
+nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git", rev = "de421011f41a6d10fc8c7a6084e4f4dee0143683", default-features = false, features = ["vst3"] }
+nih_plug_egui = { git = "https://github.com/robbert-vdh/nih-plug.git", rev = "de421011f41a6d10fc8c7a6084e4f4dee0143683" }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
