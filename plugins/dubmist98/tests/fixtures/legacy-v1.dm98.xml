@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DUBMIST98_PATCH schema="1">
+  <PARAM id="mode" value="0.0"/>
+  <PARAM id="position" value="0.5"/>
+  <PARAM id="size" value="0.5"/>
+  <PARAM id="density" value="0.699999988079071"/>
+  <PARAM id="texture" value="0.5"/>
+  <PARAM id="pitch" value="0.0"/>
+  <PARAM id="mix" value="0.5"/>
+  <PARAM id="spread" value="0.5"/>
+  <PARAM id="feedback" value="0.0"/>
+  <PARAM id="reverb" value="0.0"/>
+  <PARAM id="freeze" value="0.0"/>
+  <PARAM id="quality" value="0.0"/>
+  <PARAM id="input_gain" value="0.0"/>
+  <PARAM id="output_gain" value="0.0"/>
+  <PARAM id="bypass" value="0.0"/>
+  <PARAM id="clear" value="0.0"/>
+  <PARAM id="trigger" value="0.0"/>
+</DUBMIST98_PATCH>

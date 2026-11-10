@@ -1,0 +1,37 @@
+Dubmist 98 Enterprise Edition SE
+Voidmutt Party Research Technologies / Voidmutt Enterprises
+New integration: Copyright 2026 Dubmist contributors, GPL-3.0-or-later.
+
+Original Clouds / stmlib: Emilie Gillet, MIT; original notices remain in vendor.
+Independent product. No Mutable Instruments affiliation or endorsement.
+Monsoon control reference: Jak Plugg; no hardware or panel artwork included.
+JUCE 7.0.12 / bundled VST3 SDK: GPLv3 options. See notices/JUCE.
+Rhythmic tape formulas: adapted from Julius Kammerl (2017), MIT.
+Full MIT notice is preserved in src/kammerl_curves.h and vendor/kammerl.
+Parasites remains a source reference, not linked.
+Recorded test loop: Frequency 303, CC0; see tests/fixtures/SOURCE.md and CC0.txt.
+
+// Copyright 2014 Emilie Gillet.
+//
+// Author: Emilie Gillet (emilie.o.gillet@gmail.com)
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+// 
+// See http://creativecommons.org/licenses/MIT/ for more information.
+//

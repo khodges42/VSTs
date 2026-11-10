@@ -1,0 +1,130 @@
+--- upstream/plaits/dsp/fm/operator.h
++++ vendor/plaits/dsp/fm/operator.h
+@@ -75,7 +75,7 @@
+     const float* modulation,
+     float* out,
+     size_t size) {
+-  float previous_0, previous_1;
++  float previous_0 = 0.0f, previous_1 = 0.0f; // Desktop: initialize non-feedback scratch.
+   
+   if (modulation_source >= Operator::MODULATION_SOURCE_FEEDBACK) {
+     previous_0 = fb_state[0];
+--- upstream/plaits/dsp/voice.cc
++++ vendor/plaits/dsp/voice.cc
+@@ -227,7 +227,7 @@
+   bool already_enveloped = pp_s.already_enveloped;
+   e->Render(p, out_buffer_, aux_buffer_, size, &already_enveloped);
+   
+-  bool lpg_bypass = already_enveloped || \
++  bool lpg_bypass = modulations.desktop_lpg_bypass || already_enveloped || \
+       (!modulations.level_patched && !modulations.trigger_patched);
+   
+   // Compute LPG parameters.
+--- upstream/plaits/dsp/voice.h
++++ vendor/plaits/dsp/voice.h
+@@ -151,6 +151,7 @@
+   bool morph_patched;
+   bool trigger_patched;
+   bool level_patched;
++  bool desktop_lpg_bypass; // SOUNDGYAL desktop option; false preserves upstream.
+ };
+ 
+ // char (*__foo)[sizeof(HiHatEngine)] = 1;
+--- upstream/plaits/resources.cc
++++ vendor/plaits/resources.cc
+@@ -4030,6 +4030,7 @@
+ 
+ 
+ const int32_t* const lookup_table_i32_table[] = {
++  nullptr, // Desktop MSVC: unused table cannot have zero size.
+ };
+ 
+ const int8_t lut_lpc_excitation_pulse[] = {
+--- upstream/stmlib/utils/dsp.h
++++ vendor/stmlib/utils/dsp.h
+@@ -35,53 +35,53 @@
+ namespace stmlib {
+ 
+ inline int16_t Interpolate824(const int16_t* table, uint32_t phase)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline uint16_t Interpolate824(const uint16_t* table, uint32_t phase)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline int16_t Interpolate824(const uint8_t* table, uint32_t phase)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline uint16_t Interpolate88(const uint16_t* table, uint16_t index)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline int16_t Interpolate88(const int16_t* table, uint16_t index)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline int16_t Interpolate1022(const int16_t* table, uint32_t phase)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline int16_t Interpolate115(const int16_t* table, uint32_t phase)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline int16_t Crossfade(
+     const int16_t* table_a,
+     const int16_t* table_b,
+     uint32_t phase,
+     uint16_t balance)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline int16_t Crossfade(
+     const uint8_t* table_a,
+     const uint8_t* table_b,
+     uint32_t phase,
+     uint16_t balance)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline int16_t Crossfade1022(
+     const uint8_t* table_a,
+     const uint8_t* table_b,
+     uint32_t phase,
+     uint16_t balance)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline int16_t Crossfade115(
+     const uint8_t* table_a,
+     const uint8_t* table_b,
+     uint16_t phase,
+     uint16_t balance)
+-  __attribute__((always_inline));
++  /* desktop: optional GNU inline hint omitted */;
+ 
+ inline int16_t Mix(int16_t a, int16_t b, uint16_t balance) {
+   return (a * (65535 - balance) + b * balance) >> 16;
+--- upstream/stmlib/utils/random.cc
++++ vendor/stmlib/utils/random.cc
+@@ -31,6 +31,6 @@
+ namespace stmlib {
+ 
+ /* static */
+-uint32_t Random::rng_state_ = 0x21;
++thread_local uint32_t Random::rng_state_ = 0x21;
+ 
+ }  // namespace stmlib
+--- upstream/stmlib/utils/random.h
++++ vendor/stmlib/utils/random.h
+@@ -55,7 +55,7 @@
+   }
+ 
+  private:
+-  static uint32_t rng_state_;
++  static thread_local uint32_t rng_state_;
+ 
+   DISALLOW_COPY_AND_ASSIGN(Random);
+ };

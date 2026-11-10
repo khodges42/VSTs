@@ -12,7 +12,7 @@ Windows x64 &nbsp; | &nbsp; VST3 &nbsp; | &nbsp; GPL-3.0-or-later
 
 </div>
 
-Four independent plugins built for hands-on electronic music production. Start
+Six independent plugins built for hands-on electronic music production. Start
 with a useful sound or effect, grab the performance controls, and record the
 result. Open the editor when you want to change the underlying patch.
 
@@ -28,6 +28,10 @@ Each plugin works in a compatible VST3 host without DAWJ.
 | **ECHOGIRL** | Stereo delay effect | Dub throws, tape drift, filtered feedback and sustained regeneration | Insert on audio, choose a preset, try THROW and HOLD |
 | **8 INCH STEAK / EIS** | Multiband dynamics effect | Upward/downward compression, density, tonal shaping and saturation | Turn TENDERIZE; open BUTCHER for per-band control |
 | **SPASM** | Stereo glitch effect | Beat repeats, reverse cuts, tape stops, pitch dives and rhythmic damage | Play audio through it, hold a pad, release to return live |
+| **[SOUNDGYAL 99 Enterprise Edition](plugins/soundgyal99/README.md)** | Plaits-based synth | Full original engine family, bass layers, sub, modulation and percussion | Select a factory configuration and explore HARMONICS / TIMBRE / MORPH |
+| **[Dubmist 98](plugins/dubmist98/README.md)** | Clouds-based stereo effect | Original Clouds modes, freeze, independent blends and host-clock rhythmic slices | Feed live audio, explore the four modes, then freeze |
+
+SOUNDGYAL and Dubmist are separate C++/JUCE VST3 builds; use their linked build guides rather than the Rust workspace commands below. Both are functional previews with explicit host/listening limitations.
 
 ### VIXEN
 
