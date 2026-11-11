@@ -5,6 +5,7 @@
 
 ### Serious synthesis. Standard office equipment.
 
+Built on **Mutable Instruments Plaits, created by Emilie Gillet**.
 Twenty-four original Plaits engines, a clean central sub, animated stereo layers
 and an editable modulation matrix. Preserve the physical models, speech, FM,
 digital oddities and percussion while building bass-heavy patches.
@@ -27,6 +28,8 @@ See the [validation record and remaining work](docs/validation.md).
 | Movement | Two ADSRs, two four-shape LFOs with free Hz or tempo sync, eight bipolar modulation routes |
 | Patches | 35 independent factory configurations; categories; previous/next; initialize; portable save/load; versioned VST3 state |
 | Output | Low-frequency side reduction, central sub, gain, peak indication; 32-192 kHz host rates via windowed-sinc conversion |
+
+Install packages and ready-to-copy bundles: [release directory](../../releases/README.md).
 
 ### Install
 

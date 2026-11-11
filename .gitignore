@@ -1,3 +1,5 @@
 /target/
 /.dev-notes/
 *.user.vixen.json
+
+/releases/windows-x64/

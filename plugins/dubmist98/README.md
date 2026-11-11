@@ -7,7 +7,8 @@ Windows x64 stereo VST3 effect | Version 0.2 | GPLv3
 
 ### Granular processing for the departmental soundsystem
 
-Dubmist brings the original Mutable Instruments Clouds processor to a desktop
+Dubmist is based on **Mutable Instruments Clouds, created by Emilie Gillet**.
+It brings the original Clouds processor to a desktop
 insert, with Monsoon-style independent blend controls and a compact workstation
 interface. Position, size, density, texture, pitch, mix, spread, feedback and
 reverb are directly accessible. Freeze captures live material for further work.
@@ -41,6 +42,8 @@ See [rhythm operation, architecture and tests](docs/rhythm-milestone.md) and the
   portable patch files and twelve independent factory configurations.
 - Native raised/recessed controls, numeric entry, Shift-fine dragging, double-click
   defaults, tooltips and conventional keyboard navigation. No copied artwork.
+
+Install packages and ready-to-copy bundles: [release directory](../../releases/README.md).
 
 ### Installation
 
